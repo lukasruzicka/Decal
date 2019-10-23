@@ -1,0 +1,17 @@
+{
+    "name": "lukasruzicka/decal",
+    "description": "Turns PHP array to its PHP code interpretation.",
+    "require": {
+        "phpunit/phpunit": "^8.4"
+    },
+    "autoload": {
+        "psr-4": { "": "src/" }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lukas Ruzicka",
+            "email": "ja@lukasruzicka.cz"
+        }
+    ]
+}
