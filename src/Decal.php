@@ -40,7 +40,10 @@ class Decal
         return array_keys($array) !== range(0, count($array) - 1);
     }
 
-    private static function key($key)
+    /**
+     * @param mixed $key
+     */
+    private static function key($key): void
     {
         static::value($key);
         static::output(' => ');
@@ -51,6 +54,9 @@ class Decal
         static::output(str_repeat(' ', 4 * $level));
     }
 
+    /**
+     * @param mixed $value
+     */
     private static function value($value): void
     {
         if (is_null($value)) {
